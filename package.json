@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "main": "server/server.js",
   "scripts": {
     "start": "npm run client:build && npm run server",
     "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
@@ -13,7 +14,10 @@
     "client:dev": "cd client && npm run dev",
     "build": "cd server && npm run build",
     "seed": "cd server && npm run seed",
-    "render-build": "npm install && npm run build"
+    "render-build": "npm install && npm run build",
+    "cypress": "npx cypress open --browser chrome",
+    "test": "npx cypress run --browser electron --headless",
+    "test-gui": "npx cypress open --detached"
   },
   "keywords": [],
   "author": "",
