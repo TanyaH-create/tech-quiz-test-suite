@@ -9,6 +9,13 @@
     "composite": true,
     "jsx": "react-jsx"
   },
-  "include": ["**/*.tsx", "**/*.ts", "**/*.js", "**/*.jsx"]
+  "include": [
+    "**/*.tsx", 
+    "**/*.ts", 
+    "**/*.js", 
+    "**/*.jsx",
+    "../client/src/**/*.tsx",
+    "../client/src/**/*.ts"
+  ]
 }
 
