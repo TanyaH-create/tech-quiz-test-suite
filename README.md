@@ -35,10 +35,6 @@ The primary goal of this project is to ensure the reliability and robustness of 
 5. Build the application and seed the databse
    ```bash
    npm run build && pm run seed
-   
-
-
-
 
 ## Usage
 1. Run the application
@@ -49,10 +45,11 @@ The primary goal of this project is to ensure the reliability and robustness of 
    ```bash
    npm run test
 
-
 ## Walkthrough
 https://drive.google.com/file/d/14PlI0C_J_h400siVyKf0TvWkG7T7ZPFK/view?usp=sharing
 
+## GitHub Repository
+The source code for this project can be found here [GitHub Repository](https://github.com/TanyaH-create/book-search-challenge) .
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
