@@ -1,0 +1,22 @@
+[
+   {
+    "_id": "1",
+    "question": "What is the output of 5 + 8?",
+    "answers": [
+      { "text": "3", "isCorrect": false },
+      { "text": "8", "isCorrect": false },
+      { "text": "13", "isCorrect": true },
+      { "text": "40", "isCorrect": false }
+    ]
+  },
+  {
+    "_id": "2",
+    "question": "What is the output of 8 - 5?",
+    "answers": [
+      { "text": "3", "isCorrect": true },
+      { "text": "13", "isCorrect": false },
+      { "text": "20", "isCorrect": false },
+      { "text": "40", "isCorrect": false }
+    ]
+  }
+]
