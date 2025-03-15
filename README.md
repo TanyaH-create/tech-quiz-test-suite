@@ -3,7 +3,6 @@
 
 ## Table of Contents
 - [Description](#description)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Walkthrough](#walkthrough)
@@ -13,64 +12,47 @@
 - [License](#license)
 
 ## Description
-The README Generator is a command-line application designed to help developers create a professional README.md file for their projects.  It uses the 'Inquirer' package to dynamically generate a README based on user input.
+This project enhances a fully functional Tech Quiz application by adding comprehensive testing using Cypress. The Tech Quiz app is built with the MERN stack (MongoDB, Express.js, React, and Node.js) and allows users to take a quiz consisting of ten random tech-related questions and view their final score.
 
-## Features
+The primary goal of this project is to ensure the reliability and robustness of the application by implementing both component and end-to-end tests using Cypress.
 
-- License badge at the top of the README
-- Table of contents with links for the following sections:
-
-    - Description
-    - Installation
-    - Usage
-    - Contributing
-    - Tests
-    - Questions
-    - License
--  A link to the license information will be provided in the License secgtion
--  contact information under questions section includes email, gitHub username and link to gitHub account
 
 ## Installation
 1. Clone the repository
 
 2. Navigate to the project directory 
    ```bash
-   cd ../Readme-File-Generator
+   cd ../tech-quiz-test-suite
 
-3. Requires Node.js to be installed
-
-4. Requires a terminal environment with an editor installed
-
-5. Install 'inquirer' package
+3. Install dependencies
    ```bash
-   npm install inquirer
+   npm install
 
-6.  Run the application
-    ```bash
-    node index.js
+4. Create a .env file and add an environment variable for the databse
+   ```bash
+   MONGODB_URI='mongodb://127.0.0.1:27017/techquiz'
+   
+5. Build the application and seed the databse
+   ```bash
+   npm run build && pm run seed
+   
+
+
+
 
 ## Usage
-1. Run the application in the terminal:
+1. Run the application
    ```bash
-   node index.js 
-
-2. Answer the prompts to provide details about your project.  Some prompts that require multi-line answers use
-   a text editor. Use markdown syntax when answering these secions in thetext editor. Saving and closing the editor completes the prompt.
-
-3. Once completed, the README.md file will be generated in the current directory.
-
-
-![Screenshot1stQuestionsAdj](https://github.com/user-attachments/assets/547b98e8-f5a6-4338-9849-13f5534ec6ae)    ![Screenshot2ndQuestion](https://github.com/user-attachments/assets/984209ff-5c1f-4bc6-aa27-2b9055210f86)
-
-
-![ScreenshotTextEditorAdj](https://github.com/user-attachments/assets/4cc03d03-675f-4ccd-a07f-0d266d203667)      ![ScreenshotLicenseAdj](https://github.com/user-attachments/assets/6e4693c7-5250-4453-bbbd-df8e8a83aacb)
-
-![ScreenshotCompleteAdj](https://github.com/user-attachments/assets/256637a5-7a56-42d9-bcef-2aad720d0691)
+   npm run start:dev
+   
+2. In a second terminal window, run the tests from the command line
+   ```bash
+   npm run test
 
 
 ## Walkthrough
+https://drive.google.com/file/d/14PlI0C_J_h400siVyKf0TvWkG7T7ZPFK/view?usp=sharing
 
-https://drive.google.com/file/d/1HCRXeFDe4pAbOUVksy7iHu_ZFwOuzdwF/view?usp=sharing
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
@@ -86,12 +68,7 @@ Contributions are welcome! Please follow these steps:
     git push origin feature-name
 5.	Submit a pull request.
 
-## Tests
-To test the application:
-1.	Ensure all dependencies are installed.
-2.	Run the application and verify the output:
-    ```bash
-    node index.js
+
 ## Questions
 
  If you have any questions, feel free to contact me at dougtanyah@gmail.com.
